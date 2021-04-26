@@ -1,0 +1,59 @@
+@media(max-width:620px){
+  h1,h2,h3,h4,h4,h5,h6{
+    font-size: 1.2rem !important;
+  }
+  .main-hero{
+   min-height: 90vh;
+    #hero-business-name{
+     &:first-letter{
+      text-shadow: 5px 5px #979290;
+        
+        font-size: 5rem;
+        // margin-right: 10px;
+      }
+    }
+    #business-highlight{
+      font-size: 1.1rem;
+    }
+    .how-it-works{
+        font-size: 1.5rem;
+    }
+  }
+}
+
+@media(max-width:420px){
+  h1,h2,h3,h4,h4,h5,h6{
+    font-size: 1rem !important;
+  }
+  .main-hero{
+    #hero-business-name{
+     &:first-letter{
+      text-shadow: 2px 2px #979290;
+        font-size: 3rem;
+      }
+    }
+    #business-highlight{
+      font-size: 1rem;
+    }
+    .how-it-works{
+        font-size: 1.1rem;
+    }
+  }
+  .my-btn{
+    padding: 4px;  
+  }
+}
+
+@media(max-width:320px){
+  h1,h2,h3,h4,h4,h5,h6{
+    font-size: 0.7rem !important;
+  }
+  .main-hero{
+    #hero-business-name{
+      font-size: 1.5rem;
+     &:first-letter{
+        font-size: 3rem;
+      }
+    }
+  }
+}

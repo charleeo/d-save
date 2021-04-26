@@ -1,0 +1,19 @@
+.footer{
+  height: 30vh;
+  background: linear-gradient(to top, #1d1922 40%,#0a021d);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  p, li{
+    color:#ffff;
+  }
+  h1{
+    color: floralwhite;
+  }
+}
+footer{
+  color: rgb(201, 195, 195);
+  
+}

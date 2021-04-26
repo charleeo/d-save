@@ -1,0 +1,14 @@
+*{
+  overflow-x: hidden;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@import './navbar';
+@import "./home";
+@import './loader';
+@import './modal';
+@import './footer';
+@import './media';
+
