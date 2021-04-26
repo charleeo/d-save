@@ -11,7 +11,8 @@ const  HomePage=()=>{
           dsave mobile wallet
         </h1>
         <p id="business-highlight">
-          thinking about how you are going to pay those bills, like "house rent, school fees and the rest"? <span style={{color:'#12345'}}>DSave</span> is your best plung
+          {/* thinking about how you are going to pay those bills, like "house rent, school fees and the rest"? <span style={{color:'#12345'}}>DSave</span> is your best plung */}
+          investments redefined for a brighter and secured financial futre
         </p>
         <div className="how-it-works">
           <a href="#how-it-works" className="my-btn learn-more-btn">learn more</a >
