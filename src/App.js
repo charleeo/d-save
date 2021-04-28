@@ -7,7 +7,6 @@ import {useEffect, useState} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // import {ToastContainer} from 'react-toastify';
-import './css/App.css';
 import HomePage from "./Components/HomePage";
 import Login from './Components/Forms/Login';
 import NavBar from "./Components/NavBar";

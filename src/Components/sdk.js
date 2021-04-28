@@ -1,10 +1,11 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {MonnifyButton} from 'react-monnify';
-import {toast} from 'react-toastify';
 import useFetch from './customHooks/useFetch';
 import httpService from '../services/httpServces'
-import { useState } from 'react';
+
+
 import auth from '../services/authService';
+
 const url = `https://d-save.herokuapp.com/gateway/card-payment`;
 
  function SDK() {
@@ -60,14 +61,13 @@ const url = `https://d-save.herokuapp.com/gateway/card-payment`;
      
       const depositObject ={amountPaid,settlementAmount:authorizedAmount, paymentDescription, paymentStatus, transactionReference, product, transactionStatus:status,customer,paidOn,paymentReference,userId}
 
-      console.log('customer-information'+customer.email)
+      // const [message,setMessage] = useState('')
 
       const deposit =  httpService.post(url,depositObject,axiosConfig);
       var res= Promise.resolve(deposit);
       res.then(result=>{
-        // console.log(result.data.message)
-        // toast.info(result.data.message,{autoClose:5000});
-        // window.location.reload(1)
+        alert(result.data.message)
+        window.location.reload(1)
       })      
     },
     onClose: (response) => console.log(response),
@@ -75,11 +75,12 @@ const url = `https://d-save.herokuapp.com/gateway/card-payment`;
 
   return (
     <div className="row  justify-content-center ">
-      <div className="card-body col-md-12">
-        <div className="card shadow-lg p-5">
+      <div className="card-body col-md-8">
+        <div className="card shadow-lg ">
           <div className="card-body">
             <h4 className="text-center">Online Deposit Form</h4> <hr/>
             <p className="text-center">NOTE:Fields with <span className="text-danger">*</span> are required</p>
+                {/* {message &&<p></p>} */}
             <div className="form-group">
             <label htmlFor="amount">Amount<sup className="text-danger">*</sup></label>
               <input type="number" min="0" onChange={handleChange} value ={amount} className="form-control" name="amount" placeholder="Enter amount you want to deposit"/>

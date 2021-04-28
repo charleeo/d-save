@@ -5,12 +5,13 @@
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
-  height: 90vh;
+  height: 80vh;
   display: flex;
+  overflow-y: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  // padding: 20px;
   #hero-business-name{
     color: #f5f3f3;
     text-align: space-around;
@@ -59,14 +60,39 @@
 
 #how-it-works{
   // height: 400px;
-  background: #979290;
+  background: #423c4d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 .work-wrapper{
-  width: 100vh;
+  padding:120px !important;
+  background: #0a0807;
+  width: 600px;
+  border-radius: 4px;
+  h2{
+    text-align: center;
+    color: #ffffff;
+  }
+  p{
+    padding: 0px 100px;
+    color: #979290;
+  }
+  ul>li{
+
+    font-size: 2rem;
+    &:nth-child(1){
+      color:#b41515;
+    }
+    &:nth-child(2){
+      color:#e0dcdc;
+    }
+    &:nth-child(3){
+      color:#ffd700;
+    }
+  }
 }
 
 

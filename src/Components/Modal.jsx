@@ -6,8 +6,8 @@ return (
   <>
    <div className={showModal?'display-block':'display-none'}>
      <div className="row justify-content-center my-modal mt-5" >
-       <div className="col-md-8 col-sm-12">
-         <div className="card mt-5">
+       <div className="col-md-6 col-sm-12">
+         <div className="card ">
            <div className="card-header">
              <div className="row">
                <div className="col-md-4 offset-md-5">

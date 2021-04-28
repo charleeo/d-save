@@ -5,6 +5,11 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1,h2,h3,h4{
+  overflow: hidden;
+}
+
+
 @import './navbar';
 @import "./home";
 @import './loader';

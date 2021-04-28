@@ -1,9 +1,27 @@
 .navbar{
   background: linear-gradient(to top, #1d1922 40%,#0a021d) !important;
+  border-bottom: 9px solid #242323;
 }
 
 .nav-link{
   color:#ffffff !important;
   font-size : 1.5rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  &:hover{
+    color: #808080 !important;
+  }
+}
+
+#logo{
+  color:#ffffff;
+  text-transform: uppercase;
+  &:first-letter{
+    text-shadow: 10px 10px #979290;
+    color: #e0d5dc;
+    font-size: 4rem;
+  
+  }
+  &:hover{
+    color: #808080;
+    transition: 1s all;
+  }
 }

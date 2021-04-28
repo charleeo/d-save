@@ -62,7 +62,7 @@ ispending={ispending}
    <>
       <div className="row justify-content-center mt-5 ">
         <div className='col-md-6 col-sm-12'>
-          <div className="card border-0 shadow p-3">
+          <div className="card border-0 shadow px-3 y-5">
             <div className='card-header '>
               <h1 className="text-center">Reserve An Account</h1>
             </div>

@@ -3,13 +3,12 @@
     font-size: 1.2rem !important;
   }
   .main-hero{
-   min-height: 90vh;
+
+   height: 80vh;
     #hero-business-name{
      &:first-letter{
       text-shadow: 5px 5px #979290;
-        
         font-size: 5rem;
-        // margin-right: 10px;
       }
     }
     #business-highlight{
@@ -22,10 +21,15 @@
 }
 
 @media(max-width:420px){
+  #logo::first-letter{
+    font-size: 2rem;
+    text-shadow: 3px 5px #979290;
+  }
   h1,h2,h3,h4,h4,h5,h6{
     font-size: 1rem !important;
   }
   .main-hero{
+    height: 70vh;
     #hero-business-name{
      &:first-letter{
       text-shadow: 2px 2px #979290;
@@ -49,6 +53,7 @@
     font-size: 0.7rem !important;
   }
   .main-hero{
+    height: 60vh;
     #hero-business-name{
       font-size: 1.5rem;
      &:first-letter{
