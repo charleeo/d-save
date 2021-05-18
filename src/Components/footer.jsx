@@ -3,24 +3,21 @@ import React from  'react';
 export const Footer=()=>{
   return(
     <>
-    <div className='footer'>
-    <div className="row ">
-      <div className="col-md-6">
-        <p>Quick Links</p>
+    <div className='foot'>
+    <div className="footer">
+      <div className="links">
+        <h2>Quick Links</h2>
          <ul>
            <li>Home</li>
            <li>About</li>
          </ul>
       </div>
-      <div className="col-md-6">
-      <p>Quick Links</p>
-         <ul>
-           <li>Home</li>
-           <li>About</li>
-         </ul>
+      <div className="address">
+         <h2>Location</h2>
+         <address>NO 15, Odumbela Street, Selehu,Igbogbo, Ikorodu, Lagos</address>
       </div>
     </div>
-    <footer>&copy; {new Date().getFullYear()}</footer>
+      <footer>&copy; {new Date().getFullYear()}</footer>
     </div>
     </>
   )

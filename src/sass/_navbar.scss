@@ -1,23 +1,66 @@
-.navbar{
-  background: linear-gradient(to top, #1d1922 40%,#0a021d) !important;
-  border-bottom: 9px solid #242323;
-}
-
-.nav-link{
-  color:#ffffff !important;
-  font-size : 1.5rem;
-  &:hover{
-    color: #808080 !important;
+.nav-bg{
+  background: #030008c0 !important;
+  .nav-link{
+    color:#faf3f3 !important;
+    font-size : 1.5rem;
+    &:hover{
+      color: #808080 !important;
+    }
   }
 }
 
+.nav-bg-c{
+  background: #ffffff!important;
+  z-index: 100;
+  position: fixed !important;
+  top: 0px;
+  width: 100% !important;
+  transition: 1s all;
+  border-bottom: 9px solid #030008c0;
+  .nav-link{
+    columns: #000000 !important;
+    font-size : 1.5rem;
+    &:hover{
+      color: #808080 !important;
+    }
+  }
+
+  .dropdown-button{
+    cursor: pointer;
+    z-index: 100;
+    span{
+      width: 0;
+    height: 0;
+    display: inline-block;
+    border: 7px solid transparent;
+    border-top-color:rgb(10, 0, 0);
+    }
+  }
+
+  #logo{
+    color:#0a0202;
+    text-transform: uppercase;
+    &:first-letter{
+      text-shadow: 10px 10px #02040e;
+      color: #808080;
+      font-size: 3rem;
+    
+    }
+    &:hover{
+      color: #808080;
+      transition: 1s all;
+    }
+  }
+}
+
+
 #logo{
-  color:#ffffff;
+  color:#f7f0f0;
   text-transform: uppercase;
   &:first-letter{
-    text-shadow: 10px 10px #979290;
-    color: #e0d5dc;
-    font-size: 4rem;
+    text-shadow: 10px 10px #02040e;
+    color: #808080;
+    font-size: 3rem;
   
   }
   &:hover{
@@ -25,3 +68,32 @@
     transition: 1s all;
   }
 }
+.dropdown-button{
+  cursor: pointer;
+  z-index: 100;
+  span{
+    width: 0;
+  height: 0;
+  display: inline-block;
+  border: 7px solid transparent;
+  border-top-color:#ffff;
+  }
+}
+.dropdown-items{
+  transition: 0.2s all ease-in-out;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+
+.show-dropdown-items, .show-dropdown-profile{
+  visibility: visible;
+  // padding: 0px 30px;
+  transition: 0.2s all ease-in-out;
+  background: rgb(24, 2, 77);
+  position: fixed;
+  z-index: 90;
+  padding:0px 30px;
+}
+

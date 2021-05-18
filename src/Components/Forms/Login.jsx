@@ -1,9 +1,10 @@
 import {useState} from 'react';
-import httpServices from '../../services/httpServces';
+import httpServices from '../../services/httpServices';
 import { Link, Redirect } from 'react-router-dom';
 import auth from '../../services/authService';
 import { toast } from 'react-toastify';
 export default function Login(props){
+
   const [inputText, setInputText] = useState({
     email: "",
     password: ""
@@ -40,16 +41,14 @@ export default function Login(props){
       window.location = state ? state.from.pathname : "/";
     },5000)
    } catch (ex) {
-    //  console.log(ex.resopnse)
     if(ex.response !== undefined || ex.statusCode < 500  ){setError(ex.response.data.error)}
-    else {toast.error('There was an unexpected error. Please try again')}
+    else {setError('There was an unexpected error. Please try again')}
     setIsLoading(false)
   }
 }
 if(auth.getCurrentUser()){ return <Redirect to= '/'/>}
  return  (
-    
-      <div className="row justify-content-center mt-5 ">
+      <div className="row justify-content-center pt-4 login">
         <div className='col-md-6 col-sm-12'>
           <div className="card border-0 shadow p-3">
             <div className='card-header '>
@@ -75,18 +74,9 @@ if(auth.getCurrentUser()){ return <Redirect to= '/'/>}
                   onChange={onChange}
                   className="form-control"/>
                 </div>
-                {/* <div className='form-group'>
-                  <label htmlFor='gender'>Gender</label>
-                  <select value={inputText.gender}  name="gender"  onChange={onChange}
-                  className="form-control">
-                    <option value="">please select one</option>
-                    <option value='male'>Male</option>
-                    <option value='female'>Female</option>
-                  </select>
-                </div> */}
               <div className="d-flex justify-content-center">
-                <button className="btn btn-info btn-sm" disabled={isLoading||(!password || !email)?true:false}>
-                  {isLoading?<span className="loader"></span>:"Login Here"}
+                <button className="btn btn-bg " disabled={isLoading||(!password || !email)?true:false}>
+                  {isLoading &&<span className="loader"></span>} Login
                 </button>  
               </div>
                   {error && <p className="alert alert-danger text-center">{error}</p>}

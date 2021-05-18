@@ -1,35 +1,34 @@
 .main-hero{
-  // background: url('../../assets/image/white-brown2.png'), #0c0503;
-  background: linear-gradient(to bottom, #1d1922 40%,#0a021d);
+  // background: url('../../assets/image/payment.svg'), linear-gradient(to left, #1d1922 40%,#0a021d);
+  background:#030008c0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-blend-mode: overlay;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   overflow-y: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // padding: 20px;
+  padding:0px 20px;
   #hero-business-name{
-    color: #f5f3f3;
+    color: #faf5f5;
     text-align: space-around;
     text-transform: uppercase;
     border-bottom: 10px dashed #ffffff;
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    text-align:center;
    &:first-letter{
-    text-shadow: 10px 10px #979290;
-      color: #e0d5dc;
+    text-shadow: 10px 10px #000000;
+      color: #5e5e64;
       font-weight: 900;
       font-size: 13rem;
     }
   }
   #business-highlight{
-    color: #979290;
+    color: #ffffff;
     text-transform: capitalize;
-    font-family: "ROBOTO CONDENSED",sans-serif;
+    // font-family: "ROBOTO CONDENSED",sans-serif;
     line-height: 2;
     font-size: 1.5rem;
     text-align: center;
@@ -43,24 +42,25 @@
       font-size: 2rem;
       font-weight: bolder;
       &:hover{
-        color:#36170b;
-        transition:1s ease-in-out;
+        background: inherit;
+        color:#070269;
+        transition:0.5s ease-in-out;
       }
     }
   }
 }
 .my-btn{
-  background: #979290;
+  background: #4b4963;
   padding: 4px 10px;
   border-radius: 12px;
   text-transform: uppercase;
-  color: #0a0807;
+  color: #e7dfdc;
   font-size: 1.1rem;
 }
 
 #how-it-works{
   // height: 400px;
-  background: #423c4d;
+  background: #f7f6f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,16 +69,17 @@
 }
 .work-wrapper{
   padding:120px !important;
-  background: #0a0807;
+  background: #ffffff;
   width: 600px;
   border-radius: 4px;
+  
   h2{
     text-align: center;
-    color: #ffffff;
+    color: #000000;
   }
   p{
     padding: 0px 100px;
-    color: #979290;
+    color: #000000;
   }
   ul>li{
 

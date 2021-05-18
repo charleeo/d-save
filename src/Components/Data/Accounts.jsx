@@ -1,6 +1,6 @@
 import useFetch from './../customHooks/useFetch';
 import Reserve from './resevedAccounts';
-import { setURL } from './../../services/httpServces';
+import { setURL } from './../../services/httpServices';
 
 
 const AccountDetails=()=>{

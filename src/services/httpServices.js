@@ -14,7 +14,6 @@ axios.interceptors.response.use(null, error => {
 
 // calling protcted api
 function setJwtHeaders() {
-  
   let token =  auth.getJWT();
 
   return {
@@ -27,12 +26,20 @@ export function setURL(){
   // return 'http://127.0.0.1:5000'
   return 'https://d-save.herokuapp.com'
 }
+const instance = axios.create({
+  baseURL: 'https://d-save.herokuapp.com',
+  headers: {
+      'content-type':'application/octet-stream',
+      Authorization: auth.getCurrentUser()
+  },
+});
 const http= {
   get: axios.get,
   post: axios.post,
   put: axios.put,
   delete: axios.delete,
   setJwtHeaders,
-  setURL
+  setURL,
+  instance
 };
 export default http;

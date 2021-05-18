@@ -4,7 +4,7 @@
   }
   .main-hero{
 
-   height: 80vh;
+   min-height: 60vh;
     #hero-business-name{
      &:first-letter{
       text-shadow: 5px 5px #979290;
@@ -15,7 +15,9 @@
       font-size: 1.1rem;
     }
     .how-it-works{
+      .learn-more-btn{
         font-size: 1.5rem;
+      }
     }
   }
 }
@@ -49,13 +51,26 @@
 }
 
 @media(max-width:320px){
+  .footer{
+    flex-direction: column;
+    padding-left: 12px;
+    .address{
+      flex: 12;
+      border-top: 1px solid #ceaaaa;
+      border-left: 0px;
+    }
+    .links{
+      flex: 12;
+      text-align: left !important;
+    }
+  }
   h1,h2,h3,h4,h4,h5,h6{
-    font-size: 0.7rem !important;
+    font-size: 1.1rem !important;
   }
   .main-hero{
-    height: 60vh;
+    height: 50vh;
     #hero-business-name{
-      font-size: 1.5rem;
+      font-size: 1.5rem !important;
      &:first-letter{
         font-size: 3rem;
       }

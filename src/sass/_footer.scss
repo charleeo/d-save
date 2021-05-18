@@ -1,19 +1,26 @@
+.foot{
+  min-height: 30vh;
+  background: linear-gradient(to top, #0c0116 40%,#05020c);
+}
 .footer{
-  height: 30vh;
-  background: linear-gradient(to top, #1d1922 40%,#0a021d);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  
-  p, li{
-    color:#ffff;
+  padding:  40px;
+  border-bottom: 7px solid #080303;
+  border-top: 9px solid #050303;
+  .links{
+    flex: 5;
+    color: #f7f3f3;
   }
-  h1{
-    color: floralwhite;
+  .address{
+    border-left: 2px dashed #ceaaaa;
+    flex: 7;
+    color: #f5eeee;
+    padding-left: 10px;
   }
 }
 footer{
-  color: rgb(201, 195, 195);
-  
+  color: #962e2e;
+  text-align: center;
 }

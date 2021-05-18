@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import httpServices from '../../services/httpServces';
+import httpServices from '../../services/httpServices';
 import { Link } from 'react-router-dom';
 import renderBTN from './Button';
 export default function ForgotPassword(){
@@ -37,7 +37,7 @@ export default function ForgotPassword(){
   }
 }
   return  (
-      <div className="row justify-content-center mt-5 ">
+      <div className="row justify-content-center forget-password ">
         <div className='col-md-6 col-sm-12'>
           <div className="card border-0 shadow p-3">
               <h4 className="text-center">Password Reset Link</h4>
